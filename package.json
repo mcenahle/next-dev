@@ -1,5 +1,5 @@
 {
-  "name": "new-dev",
+  "name": "next-dev",
   "type": "module",
   "version": "0.0.1",
   "engines": {
@@ -12,6 +12,10 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^7.4.12"
+    "@iconify-json/gravity-ui": "^1.2.15",
+    "@iconify-json/mdi": "^1.2.3",
+    "astro": "^7.4.12",
+    "astro-icon": "^1.2.0",
+    "sass": "^1.108.2"
   }
 }
