@@ -1,0 +1,45 @@
+---
+import Layout from "../layouts/Layout.astro";
+
+import Merged from "../components/Merged.astro";
+
+import { Icon } from "astro-icon/components";
+
+const title = "我在开源项目上的贡献";
+---
+
+<Layout title={title}>
+  <h2>{title}</h2>
+  <p>本人热衷于参与社区的开发工作。以下列出我的 pr 列表：</p>
+  <div class="list-group">
+    <a
+      href="https://github.com/twbs/bootstrap/pull/43320"
+      target="_blank"
+      class="list-group-item list-group-item-action"
+    >
+      <div class="d-flex w-100 justify-content-between">
+        <h5 class="mb-1">
+          <Merged /> docs: fix broken Netlify logo in README
+        </h5>
+        <small class="text-body-secondary">Merged in Nov 21, 2026, 06:35</small>
+      </div>
+      <p class="mb-1">twbs/bootstrap#43320</p>
+      <small class="text-body-secondary">By mcenahle</small>
+    </a>
+    <a
+      href="https://github.com/twbs/bootstrap/pull/43354"
+      target="_blank"
+      class="list-group-item list-group-item-action"
+    >
+      <div class="d-flex w-100 justify-content-between">
+        <h5 class="mb-1">
+          <Merged /> docs: Update the latest release of v5.x in
+          docs-versions.yml
+        </h5>
+        <small class="text-body-secondary">Merged in Nov 21, 2026, 02:41</small>
+      </div>
+      <p class="mb-1">twbs/bootstrap#43354</p>
+      <small class="text-body-secondary">By mcenahle</small>
+    </a>
+  </div>
+</Layout>
