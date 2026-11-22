@@ -3,6 +3,8 @@ import Layout from "../layouts/Layout.astro";
 
 import Merged from "../components/Merged.astro";
 
+import External from "../assets/external.svg";
+
 import { Icon } from "astro-icon/components";
 
 const title = "我在开源项目上的贡献";
@@ -21,10 +23,14 @@ const title = "我在开源项目上的贡献";
         <h5 class="mb-1">
           <Merged /> docs: fix broken Netlify logo in README
         </h5>
-        <small class="text-body-secondary">Merged in Nov 21, 2026, 06:35</small>
+        <small class="text-body-secondary">
+          <External />
+        </small>
       </div>
       <p class="mb-1">twbs/bootstrap#43320</p>
-      <small class="text-body-secondary">By mcenahle</small>
+      <small class="text-body-secondary">
+        By mcenahle, merged in Nov 21, 2026, 06:35
+      </small>
     </a>
     <a
       href="https://github.com/twbs/bootstrap/pull/43354"
@@ -36,10 +42,14 @@ const title = "我在开源项目上的贡献";
           <Merged /> docs: Update the latest release of v5.x in
           docs-versions.yml
         </h5>
-        <small class="text-body-secondary">Merged in Nov 21, 2026, 02:41</small>
+        <small class="text-body-secondary">
+          <External />
+        </small>
       </div>
       <p class="mb-1">twbs/bootstrap#43354</p>
-      <small class="text-body-secondary">By mcenahle</small>
+      <small class="text-body-secondary">
+        By mcenahle, merged in Nov 21, 2026, 02:41
+      </small>
     </a>
   </div>
 </Layout>
