@@ -29,6 +29,30 @@ body {
   box-shadow: inset 0 0 16px 6px #fff;
 }
 
+@mixin link-style {
+  color: #73b3e7;
+
+  &:hover {
+    color: #a1d3ff;
+  }
+
+  &:focus {
+    outline: 0.25rem solid #2491ff;
+    outline-offset: 0.25rem;
+    border-radius: 0;
+  }
+
+  &:focus-visible {
+    outline: 2px solid #fff;
+    outline-offset: 3px;
+  }
+}
+
 a {
   text-decoration: none;
+  @include link-style;
+}
+
+.btn-link {
+  @include link-style;
 }
