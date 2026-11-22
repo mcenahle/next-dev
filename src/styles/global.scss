@@ -30,21 +30,17 @@ body {
 }
 
 @mixin link-style {
-  color: #73b3e7;
+  color: #368cd2;
 
   &:hover {
-    color: #a1d3ff;
+    color: #65b2f6;
   }
 
-  &:focus {
-    outline: 0.25rem solid #2491ff;
+  &:focus,
+  &:focus-visible {
+    outline: 0.25rem solid #2582ce;
     outline-offset: 0.25rem;
     border-radius: 0;
-  }
-
-  &:focus-visible {
-    outline: 2px solid #fff;
-    outline-offset: 3px;
   }
 }
 
