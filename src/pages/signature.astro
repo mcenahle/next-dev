@@ -39,7 +39,11 @@ const title = "签名";
 
   <p>
     Randomart image:{" "}
-    <a href="/randomart-image.txt" target="_blank">
+    <a
+      href="javascript:void(0)"
+      data-bs-toggle="modal"
+      data-bs-target="#randomart-image-Modal"
+    >
       <u>点此查看</u>
     </a>
   </p>
@@ -79,4 +83,106 @@ const title = "签名";
   </p>
 
   <p style="text-align: right;">Last updated: Nov 18, 2026.</p>
+
+  <div
+    class="modal fade"
+    id="randomart-image-Modal"
+    tabindex="-1"
+    aria-labelledby="randomart-image-Label"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="randomart-image-Label">
+            我的 Randomart image
+          </h1>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="modal-body text-center">
+          <p>
+            <code>+--[ED25519 256]--+</code>
+          </p>
+          <p>
+            <code>
+              |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.o...&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|
+            </code>
+          </p>
+          <p>
+            <code>
+              |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.o&nbsp;&nbsp;&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|
+            </code>
+          </p>
+          <p>
+            <code>
+              |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+.&nbsp;&nbsp;&nbsp;&nbsp;E&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|
+            </code>
+          </p>
+          <p>
+            <code>
+              |&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.=o&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|
+            </code>
+          </p>
+          <p>
+            <code>
+              |&nbsp;&nbsp;&nbsp;&nbsp;.==.S.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|
+            </code>
+          </p>
+          <p>
+            <code>
+              |&nbsp;&nbsp;...*=.+&nbsp;.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|
+            </code>
+          </p>
+          <p>
+            <code>
+              |..o==++O&nbsp;+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|
+            </code>
+          </p>
+          <p>
+            <code>
+              |.++++o%.+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|
+            </code>
+          </p>
+          <p>
+            <code>
+              |+.oo.O+o &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|
+            </code>
+          </p>
+          <p>
+            <code>+----[SHA256]-----+</code>
+          </p>
+        </div>
+        <div class="modal-footer">
+          <a
+            href="/randomart-image.txt"
+            target="_blank"
+            type="button"
+            class="btn btn-primary"
+          >
+            查看 txt 版 Randomart image <Icon name="mdi:arrow-top-right" />
+          </a>
+          <button
+            type="button"
+            class="btn btn-secondary"
+            data-bs-dismiss="modal"
+          >
+            关闭
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
 </Layout>
+
+<style>
+  .modal-body {
+    p {
+      margin-bottom: 0rem;
+    }
+  }
+</style>
